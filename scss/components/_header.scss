@@ -1,0 +1,40 @@
+/*=============== Header CSS ==================*/
+
+// header-area
+.header-area{
+    border-bottom: 1px solid #1B75BB;
+    position: relative;
+    z-index: 3;
+    // box-shadow: 0px 5px 25px -10px #000000;
+    .site-logo{
+        height: 110px;
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 220px;
+        }
+    }
+}
+.mainmenu{
+    ul{
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                padding: 42px 15px;
+                text-transform: uppercase;
+                color: #000000;
+                
+            }
+            &:hover{
+                a{
+                    color: #1B75BB;
+                }
+            }
+        }
+    }
+}
+
+
+
+

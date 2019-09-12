@@ -1,0 +1,53 @@
+/*============== Footer CSS ================*/
+.footer-area {
+    background-color: #F3F3F3;
+    padding: 15px 0;
+    .single-footer{
+        &.footer-right{
+            a:last-child{
+                margin-right: 0;
+            }
+        }
+        &.copyright-text {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        a{
+            margin-right: 5px;
+            display: inline-block;
+        }
+        i {
+            font-size: 25px;
+            opacity: .6;
+            transition: all .5s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.single-footer i.fa-facebook {
+    color: $facebook-color;
+}
+.single-footer i.fa-instagram {
+    color: $instagram-color;
+}
+.single-footer i.fa-twitter {
+    color: $twitter-color;
+}
+.single-footer i.fa-youtube {
+    color: $youtube-color;
+}
+.single-footer i.fa-graduation-cap {
+    color: #900028;
+}
+.single-footer i.fa-calendar {
+    color: #FD3952;
+}
+.single-footer i.fa-info-circle {
+    color: #91DC5A;
+}
+.single-footer i.fa-envelope {
+    color: #D74D55;
+}
