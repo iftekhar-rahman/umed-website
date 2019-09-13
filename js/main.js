@@ -1,5 +1,16 @@
 jQuery(document).ready(function($){
 
+    // $("#header").sticky({ topSpacing: 0 });
+
+
+    // $(window).scroll(function(){
+    //     if ($(this).scrollTop() > 0) {
+    //        $('.header-area').addClass('sticky-header');
+    //     } else {
+    //        $('.header-area').removeClass('sticky-header');
+    //     }
+    // });
+
     // $('select').niceSelect();
 
     // homepage-slides

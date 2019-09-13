@@ -12,8 +12,8 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!--Plugins-->
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
-        <link href="css/nice-select.css" rel="stylesheet">
+        <!-- <link href="css/owl.carousel.min.css" rel="stylesheet"> -->
+        <!-- <link href="css/animate.min.css" rel="stylesheet"> -->
 
         <!--Theme specific styles-->
         <link href="css/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
 
         <!-- .header-area starts -->
-        <div class="header-area">
+        <div id="header" class="header-area">
             <div class="container">
                 <div class="row">
                     <div class="col-auto">
@@ -89,8 +89,64 @@
         </div>
         <!-- .about-area ends -->
 
+        <!-- .service-area starts -->
+        <div class="service-area service-bg" style="background-image: url(./img/service-bg.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="section-title section-border">SERVICIOS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-4">
+                        <div class="single-service service-right">
+                            <h3 class="text-right">TALLERES Y CURSOS PRESENCIALES</h3>
+                            <div class="single-service-content">
+                                <img src="img/service-1.jpg" alt="">
+                                <p>Ofrecemos una amplia gama de actividades educativas en diversas sedes que abonan al aumento de interés de los participantes. Estos talleres y eventos diversos se estarán anunciando periódicamente en los distintos medios. Los eventos le dan la bienvenida al personal de las organizaciones tanto como a todos aquellos interesados en el tema de utilización médica. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="single-service service-left">
+                            <h3>WEBINARS Y MODULOS EDUCATIVOS</h3>
+                            <div class="single-service-content">
+                                <img src="img/service-1.jpg" alt="">
+                                <p>Pronto estaremos brindándole la oportunidad de participar de talleres educativos en línea para aquellos que prefieren capacitarse desde la comodidad de su hogar en un ambiente interactivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-4">
+                        <div class="single-service service-right">
+                            <h3 class="text-right">EVALUACION COMPRENSIVA DE SU DEPARTAMENTO DE UTILIZACION MEDICA</h3>
+                            <div class="single-service-content">
+                                <img src="img/service-1.jpg" alt="">
+                                <p>Una detallada evaluación de su departamento de utilización con recomendaciones para la efectiva capacitación de su personal elimina los retos que conllevan cuantiosas pérdidas para su organización.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="single-service service-left">
+                            <h3>EVENTOS DE CAPACITACION EN SU FACILIDAD</h3>
+                            <div class="single-service-content">
+                                <img src="img/service-1.jpg" alt="">
+                                <p>Su facilidad resulta ser el escenario ideal para capacitar a su personal. No requiere salir de su entorno durante horas laborables ahorrando tiempo y esfuerzo a la vez que se ganan importantes destrezas que abona a su mejor desempeño. Le ofrecemos la opción de <strong>créditos de educación continua</strong> en el campo de la Utilización Médica con el auspicio del prestigioso Recinto de Ciencias Médicas de la Universidad de Puerto Rico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .service-area ends -->
+
         <!-- .team-area starts -->
-        <div class="team-area">
+        <div id="team" class="team-area">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -104,17 +160,21 @@
                             <div>
                                 <div class="team-member-photo">
                                     <img src="img/member-3.jpg" alt="">
+                                    <div class="member-hover-content">
+                                        <h3>Salman Khan</h3>
+                                        <span class="title">Founder / CEO</span>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="member-hover-content">
-                                    <h3>Salman Khan</h3>
-                                    <span class="title">Founder / CEO</span>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
+                                <!-- <div class="team-member-text">
+                                    <p>La Dra. Pietri, medico con vasta experiencia en todo lo referente a Utilización, ha fungido como Auditora Médica para varias prestigiosas organizaciones de salud en P.R. Con sus años de labor como directora de utilización en el sector hospitalario domina el campo de la Utilización Medica en toda su extensión. Sin duda nos provee una oportunidad de aprendizaje sin igual.</p>
+                                </div> -->
                             </div>
+
                         </div>
                         <!-- .single-team-member ends -->
                     </div>
@@ -197,8 +257,9 @@
         <script src="js/bootstrap.bundle.min.js"></script>       
 
         <!--Plugins-->
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.nice-select.min.js"></script>
+        <!-- <script src="js/owl.carousel.min.js"></script> -->
+        <script src="js/jquery.sticky.js"></script>
+        <!-- <script src="js/jquery.easing.min.js"></script> -->
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>

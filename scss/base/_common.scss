@@ -14,9 +14,9 @@ p {
     	margin-bottom: 0;
     }
 }
-a, button, img, input, span {
-    @extend %basetransition; 
-}
+// a, button, img, input, span {
+//     @extend %basetransition; 
+// }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 5px;
     height: 50px;
@@ -66,7 +66,7 @@ textarea {
 .section-title {
     font-size: 38px;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 .section-border{
