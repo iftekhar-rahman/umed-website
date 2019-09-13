@@ -18,19 +18,19 @@ p {
 //     @extend %basetransition; 
 // }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
-    border-radius: 5px;
-    height: 50px;
-    padding: 8px 20px;
+    border-radius: 0;
+    height: 40px;
+    padding: 5px 10px;
 }
 .form-group {
     margin-bottom: 25px;
     .form-control{
         &:focus {
             box-shadow: none;
-            border-color: #2a7d2e;
+            border-color: #F6921E;
         }
         &:hover {
-            border-color: #2a7d2e;
+            border-color: #F6921E;
         }
     }
 }
@@ -55,10 +55,10 @@ textarea {
     border-color: #ced4da;
     transition: all .3s ease;
     &:focus {
-        border-color: #2a7d2e;
+        border-color: #F6921E;
     }
     &:hover {
-        border-color: #2a7d2e;
+        border-color: #F6921E;
     }
 }
 

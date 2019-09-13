@@ -114,18 +114,18 @@ p:last-child {
   margin-bottom: 0; }
 
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
-  border-radius: 5px;
-  height: 50px;
-  padding: 8px 20px; }
+  border-radius: 0;
+  height: 40px;
+  padding: 5px 10px; }
 
 .form-group {
   margin-bottom: 25px; }
   .form-group .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-color: #2a7d2e; }
+    border-color: #F6921E; }
   .form-group .form-control:hover {
-    border-color: #2a7d2e; }
+    border-color: #F6921E; }
 
 input[type=submit], button[type=submit] {
   cursor: pointer; }
@@ -151,9 +151,9 @@ textarea {
   -o-transition: all .3s ease;
   transition: all .3s ease; }
   textarea:focus {
-    border-color: #2a7d2e; }
+    border-color: #F6921E; }
   textarea:hover {
-    border-color: #2a7d2e; }
+    border-color: #F6921E; }
 
 /*========.section-title=========*/
 .section-title {
@@ -280,7 +280,7 @@ select {
     -o-transition: all .3s ease;
     transition: all .3s ease; }
   .mainmenu ul li:hover a {
-    color: #1B75BB; }
+    color: #F6921E; }
 
 /*============== Footer CSS ================*/
 .footer-area {
@@ -478,7 +478,7 @@ select {
             color: #F6972B; }
 
 .service-area {
-  padding: 50px 0 120px;
+  padding: 60px 0 80px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -486,16 +486,28 @@ select {
     margin-bottom: 50px; }
 
 .single-service {
-  margin-bottom: 40px; }
-  .single-service.service-right .single-service-content img {
-    float: right;
-    max-width: 250px;
-    margin-left: 15px;
-    margin-bottom: 15px; }
+  margin-bottom: 40px;
+  overflow: hidden; }
+  .single-service h3 {
+    text-transform: uppercase; }
+  .single-service.service-right {
+    text-align: right; }
+    .single-service.service-right .single-service-content img {
+      float: right;
+      max-width: 350px;
+      margin-left: 15px;
+      margin-bottom: 15px; }
   .single-service.service-left .single-service-content img {
     float: left;
-    max-width: 250px;
+    max-width: 350px;
     margin-right: 15px;
     margin-bottom: 15px; }
+
+.contact-area {
+  padding: 90px 0; }
+
+.contact-area h3 {
+  text-transform: uppercase;
+  font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
