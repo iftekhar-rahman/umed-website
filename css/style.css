@@ -271,6 +271,8 @@ select {
 
 .mainmenu ul li {
   display: inline-block; }
+  .mainmenu ul li.active a {
+    color: #F6921E; }
   .mainmenu ul li a {
     display: block;
     padding: 40px 15px 40px 15px;
@@ -329,15 +331,16 @@ select {
 
 /*=========== Button CSS ==========*/
 .boxed-btn {
-  background-color: #DB2D2E;
-  padding: 8px 20px;
+  background-color: #1B75BB;
+  padding: 10px 25px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   border: 0;
+  border-radius: 0;
   z-index: 2;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
   .boxed-btn:after {
-    background-color: #323232;
+    background-color: #F6921E;
     -webkit-transform: scaleY(0);
     -ms-transform: scaleY(0);
     transform: scaleY(0); }
@@ -345,15 +348,8 @@ select {
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1); }
-
-.bordered-btn {
-  border: 2px solid #2A7D2E;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  background: transparent; }
-  .bordered-btn:hover {
-    color: #154D32; }
+  .boxed-btn:hover {
+    border: 0; }
 
 .boxed-btn, .boxed-btn:hover {
   color: #ffffff; }
@@ -505,9 +501,25 @@ select {
 
 .contact-area {
   padding: 90px 0; }
-
-.contact-area h3 {
-  text-transform: uppercase;
-  font-size: 24px; }
+  .contact-area address {
+    margin-bottom: 25px; }
+  .contact-area h3 {
+    text-transform: uppercase;
+    font-size: 24px; }
+  .contact-area .col-lg-6:nth-child(1) {
+    padding-right: 25px; }
+  .contact-area .col-lg-6:nth-child(2) {
+    padding-left: 25px; }
+  .contact-area .form-footer {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .contact-area .file-upload {
+    width: 280px; }
+    .contact-area .file-upload .custom-file-label {
+      border-color: #ced4da;
+      border-radius: 0; }
+    .contact-area .file-upload .custom-file-input:focus ~ .custom-file-label {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */

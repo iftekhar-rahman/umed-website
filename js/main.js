@@ -1,5 +1,29 @@
 jQuery(document).ready(function($){
 
+    var scrollLink = $('.scroll');
+
+    // Smooth Scrolling
+    scrollLink.click(function(e){
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+        $(".header-top").addClass("inheight");
+    });
+
+    $(window).scroll(function(){
+        var scrollBarLocation = $(this).scrollTop();
+
+        scrollLink.each(function(){
+            var sectionOffset = $(this.hash).offset().top -20;
+
+            if( sectionOffset <=  scrollBarLocation ){
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+        });
+    });
+
     // $("#header").sticky({ topSpacing: 0 });
 
 

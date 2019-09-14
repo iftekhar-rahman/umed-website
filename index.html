@@ -23,7 +23,7 @@
         <script src="js/jquery-migrate-1.4.1.min.js"></script>
     </head>
     <body>
-
+        <div class="header-top" id="home"></div>
         <!-- .header-area starts -->
         <div id="header" class="header-area">
             <div class="container">
@@ -36,12 +36,12 @@
                     <div class="col">
                         <div class="mainmenu text-right">
                             <ul>
-                                <li><a href="#">INICIO</a></li>
-                                <li><a href="#">SERVICIOS</a></li>
-                                <li><a href="#">REGISTRO</a></li>
-                                <li><a href="#">NUESTRO EQUIPO</a></li>
-                                <li><a href="#">EVENTOS</a></li>
-                                <li><a href="#">CONTACTANOS</a></li>
+                                <li class="active"><a class="scroll" href="#home">INICIO</a></li>
+                                <li class=""><a class="scroll" href="#services">SERVICIOS</a></li>
+                                <li class=""><a class="scroll" href="#">REGISTRO</a></li>
+                                <li class=""><a class="scroll" href="#">NUESTRO EQUIPO</a></li>
+                                <li class=""><a class="scroll" href="#">EVENTOS</a></li>
+                                <li class=""><a class="scroll" href="#contact">CONTACTANOS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
         <!-- .about-area ends -->
 
         <!-- .service-area starts -->
-        <div class="service-area service-bg" style="background-image: url(./img/service-bg.png);">
+        <div id="services" class="service-area service-bg" style="background-image: url(./img/service-bg.png);">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
@@ -224,7 +224,7 @@
         <!-- .team-area ends -->
 
         <!-- .contact-area starts -->
-        <div class="contact-area">
+        <div id="contact" class="contact-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -269,7 +269,7 @@
                                     </div>
                                     <div class="form-footer d-flex justify-content-between w-100">
                                         <div class="submit-btn">
-                                            <button class="btn btn-primary" type="submit" value="submit">Enviar</button>
+                                            <button class="boxed-btn" type="submit" value="submit">Enviar</button>
                                         </div>
                                         <div class="file-upload">
                                             <div class="input-group">

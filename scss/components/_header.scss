@@ -24,6 +24,11 @@
     ul{
         li {
             display: inline-block;
+            &.active{
+                a{
+                    color: #F6921E;
+                }
+            }
             a {
                 display: block;
                 padding: 40px 15px 40px 15px;
