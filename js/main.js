@@ -1,30 +1,53 @@
 jQuery(document).ready(function($){
 
-    var scrollLink = $('.scroll');
+    
 
-    // Smooth Scrolling
-    scrollLink.click(function(e){
-        e.preventDefault();
-        $('body,html').animate({
-            scrollTop: $(this.hash).offset().top
-        }, 1000);
-        $(".header-top").addClass("inheight");
+    //jQuery smooth scroll
+    $('li.smooth-menu a').bind('click', function(event) {
+        var $anchor = $(this);
+        var headerH = '100';
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+        }, 1200, 'easeInOutExpo');
+
+        event.preventDefault();
     });
 
-    $(window).scroll(function(){
-        var scrollBarLocation = $(this).scrollTop();
-
-        scrollLink.each(function(){
-            var sectionOffset = $(this.hash).offset().top -20;
-
-            if( sectionOffset <=  scrollBarLocation ){
-                $(this).parent().addClass('active');
-                $(this).parent().siblings().removeClass('active');
-            }
-        });
+    $("li.smooth-menu").on("click", function() {
+        $("li.smooth-menu").removeClass("active");
+        $(this).addClass("active");
     });
 
-    // $("#header").sticky({ topSpacing: 0 });
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+    // var scrollLink = $('.scroll');
+
+    // // Smooth Scrolling
+    // scrollLink.click(function(e){
+    //     e.preventDefault();
+    //     $('body,html').animate({
+    //         scrollTop: $(this.hash).offset().top
+    //     }, 1000);
+    //     $(".header-top").addClass("inheight");
+    // });
+
+    // $(window).scroll(function(){
+    //     var scrollBarLocation = $(this).scrollTop();
+
+    //     scrollLink.each(function(){
+    //         var sectionOffset = $(this.hash).offset().top -60;
+
+    //         if( sectionOffset <=  scrollBarLocation ){
+    //             $(this).parent().addClass('active');
+    //             $(this).parent().siblings().removeClass('active');
+    //         }
+    //     });
+    // });
+
+    $(".header-area").sticky({ topSpacing: 0 });
 
 
     // $(window).scroll(function(){

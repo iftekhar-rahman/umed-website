@@ -4,11 +4,14 @@
 .header-area{
     border-bottom: 1px solid #1B75BB;
     background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 999999999 !important;
+    [data-aos=zoom-in-up] {
+        transform: scale(.3);
+    }
     .site-logo{
         height: 107px;
         display: flex;

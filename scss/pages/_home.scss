@@ -6,7 +6,7 @@
     height: 450px;
     position: relative;
     z-index: 2;
-    margin-top: 108px;
+    // margin-top: 108px;
     &:after{
         position: absolute;
         left: 0;
@@ -204,12 +204,21 @@
         padding-right: 5px;
     }
     .file-upload {
-        width: 280px;
+        .custom-file {
+            text-align: center;
+        }
         .custom-file-label{
             border-color: #ced4da;
             border-radius: 0;
+            background-color: #e9ecef;
+            cursor: pointer;
+            z-index: 2;
+            width: 210px;
+            left: auto;
             &:after{
-                
+                content: "";
+                border: 0;
+                background: none;
             }
         }
         .custom-file-input:focus~.custom-file-label {
