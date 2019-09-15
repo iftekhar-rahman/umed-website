@@ -2,28 +2,61 @@
 
 // header-area
 .header-area{
-    border-bottom: 1px solid #1B75BB;
     background-color: #fff;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     width: 100%;
     z-index: 999999999 !important;
-    [data-aos=zoom-in-up] {
-        transform: scale(.3);
-    }
+    -webkit-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.75);
+    position: relative;
     .site-logo{
         height: 107px;
         display: flex;
         align-items: center;
         transition: all .3s ease;
+        @include  all-below-med{
+            height: 77px;
+        }
         img{
             max-width: 220px;
             transition: all .3s ease;
+            @include  mx-desktops{
+                max-width: 200px;
+            }
+            @include  all-below-med{
+                max-width: 150px;
+            } 
         }
     }
+    @include all-below-med{
+        .container{
+            position: relative;
+            .menu-bars {
+                position: absolute;
+                top: 25px;
+                right: 0;
+                cursor: pointer;
+                @include all-below-sm{
+                    right: 15px;
+                }
+                span {
+                    display: block;
+                    width: 35px;
+                    height: 4px;
+                    background-color: #1B75BB;
+                    margin: 4px 0;
+                }
+            }
+        }
+        
+    }
+    
 }
 .mainmenu{
+    // display: none;
+    // @include desktops{
+    //     display: block;
+    // }
     ul{
         li {
             display: inline-block;
@@ -38,6 +71,9 @@
                 text-transform: uppercase;
                 color: #000000;
                 transition: all .3s ease;
+                @include  mx-desktops{
+                    padding: 40px 6px 40px 6px;
+                }
             }
             &:hover{
                 a{
@@ -47,25 +83,201 @@
         }
     }
 }
+// Mobile menu
+.mainmenu {
+    @include all-below-med{
+        position: fixed;
+        right:-250px;
+        top: 0;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px -5px #000;
+        width: 250px;
+        text-align: center !important;
+        height: 100%;
+        padding: 40px 20px 0;
+        z-index: 99999;
+        transition: all .5s ease;
+        &.active {
+            right: 0;
+        }
+        .close-btn {
+            position: absolute;
+            left: 9px;
+            padding: 10px;
+            top: 0;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+                color: #F6921E;
+            }
+        }
+    }
+    @include all-below-med{
+        ul {
+            
+            li {
+                display: block;
+                border-bottom: 1px solid #ddd;
+                a {
+                    padding: 10px 6px 10px 6px;
+                }
+                
+            }
+        }
+    }
+    
+}
 
 
-// .header-area.sticky-header {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     transition: all .7s linear;
-// }
-// .sticky-wrapper.is-sticky .header-area {
-//     background-color: #fff;
-//     z-index: 999;
-//     .site-logo {
-//         height: 77px;
-//         img {
-//             max-width: 170px;
-//         }
-//     }
-//     .mainmenu ul li a {
-//         padding: 25px 15px 25px 15px;
-//     }
-// }
+
+
+.sticky-wrapper.is-sticky {
+    // .slicknav_nav{
+    //     top: 90px;
+    // }
+}
+.sticky-wrapper.is-sticky .mainmenu ul li a {
+    @include large-desktops{
+        padding: 25px 15px 25px 15px;
+        transition: all .7s ease;
+    }
+    @include  mx-desktops{
+        padding: 25px 6px 25px 6px;
+    }
+}
+.sticky-wrapper.is-sticky .site-logo {
+    @include desktops{
+        height: 77px;
+        transition: all .7s ease;
+    }
+    @include  all-below-med{
+        height: 77px;
+    }
+}
+.sticky-wrapper.is-sticky .site-logo img {
+    @include desktops{
+        max-width: 180px;
+        transition: all .7s ease;
+    }
+    @include  all-below-med{
+        max-width: 150px;
+    } 
+}
+
+.header-top-area {
+    background-color: #1B75BB;
+    padding: 6px 0 7px;
+    ul{
+        li{
+            display: inline-block;
+            color: #fff;
+            margin: 0 6px;
+            opacity: .6;
+            transition: all .5s ease;
+            font-size: 16px;
+            &:hover{
+                opacity: 1;
+            }
+            a{
+                margin-right: 5px;
+                display: block;
+                color: #fff;
+            }
+        }
+    }
+    .header-contact-info {
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+/* =======slicknav_menu======== */
+.slicknav_menu {
+    @extend %displaynone;
+    @include all-below-med(){
+        display: block;
+        background: #ddd;
+        position: fixed;
+        left: 0;
+        top: -10px;
+        right: 0;
+        width: 720px;
+        z-index: 999999999999;
+        margin: 0 auto;
+        height: 0;
+        // &.sticky-menu-bar .slicknav_btn {
+        //     top: 33px;
+        // }
+        span.slicknav_menutxt {
+            display: none;
+        }
+        .slicknav_btn {
+            padding: 0;
+            margin: 0px 11px 0 0;
+            font-size: 30px;
+            background: none;
+            top: 72px;
+            // @include mobile-lg{
+            //     margin: 0px -5px 0 0;
+            // }
+            &:hover{
+                background: none;
+            }
+            // @include mx-mobile(){
+            //     // right: 0px;
+            // };
+            // @include mx-mobile-lg(){
+            //     // right: 63px;
+            // };
+        }
+        .slicknav_icon {
+            margin: 0;
+            span {
+                background-color: #1B75BB;
+                border-radius: 3px;
+            }
+        }
+        .slicknav_nav {
+            padding: 10px 0;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: 127px;
+            width: 100%;
+            box-shadow: 2px 10px 30px -14px #000;
+            .slicknav_row {
+                padding: 0;
+                a{
+                    padding: 10px 15px;
+                    display: inline-block;
+                }
+            }
+            .slicknav_row{
+                border-radius: 0px;
+                &:hover {
+                    border-radius: 0px;
+                }
+            }
+        }
+        a {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #000;
+            border-radius: 0;
+            &:hover {
+                border-radius: 0;
+            }
+        }
+        
+        
+    }
+    @include mx-mobile-lg(){
+        width: 540px;
+    };
+    @include all-below-sm(){
+        width: 100%;
+    };
+}

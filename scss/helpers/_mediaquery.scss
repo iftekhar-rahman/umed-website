@@ -19,7 +19,7 @@
 }
 
 // Small devices (portrait phones, less than 575px)//
-@mixin mx-mobile {
+@mixin all-below-sm {
 	@media (max-width: 575px) {
 		@content;
 	}

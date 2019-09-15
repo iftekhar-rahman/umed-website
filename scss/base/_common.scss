@@ -4,6 +4,9 @@ body {
     font-family: $body-font;
     font-size: $body-font-size;
     color: $body-color;
+    @include all-below-sm(){
+        font-size: 16px;
+    }
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px;
@@ -14,9 +17,6 @@ p {
     	margin-bottom: 0;
     }
 }
-// a, button, img, input, span {
-//     @extend %basetransition; 
-// }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 0;
     height: 40px;
@@ -51,7 +51,7 @@ textarea {
     height: 150px;
     padding: 10px 20px;
     width: 100%;
-    // margin-bottom: -7px;
+    margin-bottom: -7px;
     border-color: #ced4da;
     transition: all .3s ease;
     &:focus {
@@ -68,6 +68,9 @@ textarea {
     font-weight: 500;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include all-below-mobile-lg{
+        font-size: 30px;
+    }
 }
 .section-border{
     position: relative;
@@ -80,13 +83,20 @@ textarea {
         height: 2px;
         background-color: #000;
         content: "";
+        @include all-below-mobile-lg{
+            top: 18px;
+            width: 70px;
+            left: -75px;
+        }
     }
     &:before {
         left: auto;
         right: -110px;
+        @include all-below-mobile-lg{
+            right: -75px;
+        }
     }
 }
-
 /*======.owl-dots customization=======*/
 .owl-dots {
     text-align: center;

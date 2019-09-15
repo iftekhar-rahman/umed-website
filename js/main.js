@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-    
+    // $('#menu').slicknav();
 
     //jQuery smooth scroll
     $('li.smooth-menu a').bind('click', function(event) {
@@ -22,6 +22,26 @@ jQuery(document).ready(function($){
         offset: 200,
         duration: 1000,
     });
+
+    $(".header-area").sticky({ topSpacing: 0 });
+
+    $(".menu-bars").on('click', function(){
+        $('.mainmenu').addClass('active');
+    });
+    $(".close-btn, .mainmenu ul li a").on('click', function(){
+        $('.mainmenu').removeClass('active');
+        return false;
+    });
+
+    // $(window).scroll(function(){
+    //     if ($(this).scrollTop() > 36) {
+    //        $('.slicknav_menu').addClass('sticky-menu-bar');
+    //     } else {
+    //        $('.slicknav_menu').removeClass('sticky-menu-bar');
+    //     }
+    // });
+
+
 
     // var scrollLink = $('.scroll');
 
@@ -47,16 +67,10 @@ jQuery(document).ready(function($){
     //     });
     // });
 
-    $(".header-area").sticky({ topSpacing: 0 });
+    
 
 
-    // $(window).scroll(function(){
-    //     if ($(this).scrollTop() > 0) {
-    //        $('.header-area').addClass('sticky-header');
-    //     } else {
-    //        $('.header-area').removeClass('sticky-header');
-    //     }
-    // });
+    
 
     // $('select').niceSelect();
 
