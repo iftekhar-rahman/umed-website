@@ -53,10 +53,6 @@
     
 }
 .mainmenu{
-    // display: none;
-    // @include desktops{
-    //     display: block;
-    // }
     ul{
         li {
             display: inline-block;
@@ -83,6 +79,7 @@
         }
     }
 }
+
 // Mobile menu
 .mainmenu {
     @include all-below-med{
@@ -129,13 +126,6 @@
 }
 
 
-
-
-.sticky-wrapper.is-sticky {
-    // .slicknav_nav{
-    //     top: 90px;
-    // }
-}
 .sticky-wrapper.is-sticky .mainmenu ul li a {
     @include large-desktops{
         padding: 25px 15px 25px 15px;
@@ -194,90 +184,3 @@
 
 
 
-/* =======slicknav_menu======== */
-.slicknav_menu {
-    @extend %displaynone;
-    @include all-below-med(){
-        display: block;
-        background: #ddd;
-        position: fixed;
-        left: 0;
-        top: -10px;
-        right: 0;
-        width: 720px;
-        z-index: 999999999999;
-        margin: 0 auto;
-        height: 0;
-        // &.sticky-menu-bar .slicknav_btn {
-        //     top: 33px;
-        // }
-        span.slicknav_menutxt {
-            display: none;
-        }
-        .slicknav_btn {
-            padding: 0;
-            margin: 0px 11px 0 0;
-            font-size: 30px;
-            background: none;
-            top: 72px;
-            // @include mobile-lg{
-            //     margin: 0px -5px 0 0;
-            // }
-            &:hover{
-                background: none;
-            }
-            // @include mx-mobile(){
-            //     // right: 0px;
-            // };
-            // @include mx-mobile-lg(){
-            //     // right: 63px;
-            // };
-        }
-        .slicknav_icon {
-            margin: 0;
-            span {
-                background-color: #1B75BB;
-                border-radius: 3px;
-            }
-        }
-        .slicknav_nav {
-            padding: 10px 0;
-            background: #fff;
-            position: absolute;
-            left: 0;
-            top: 127px;
-            width: 100%;
-            box-shadow: 2px 10px 30px -14px #000;
-            .slicknav_row {
-                padding: 0;
-                a{
-                    padding: 10px 15px;
-                    display: inline-block;
-                }
-            }
-            .slicknav_row{
-                border-radius: 0px;
-                &:hover {
-                    border-radius: 0px;
-                }
-            }
-        }
-        a {
-            padding: 10px 15px;
-            font-size: 16px;
-            color: #000;
-            border-radius: 0;
-            &:hover {
-                border-radius: 0;
-            }
-        }
-        
-        
-    }
-    @include mx-mobile-lg(){
-        width: 540px;
-    };
-    @include all-below-sm(){
-        width: 100%;
-    };
-}
