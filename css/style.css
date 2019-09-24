@@ -650,4 +650,7 @@ select {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
+.fancybox-container {
+  z-index: 99999999999999999; }
+
 /*# sourceMappingURL=style.css.map */
