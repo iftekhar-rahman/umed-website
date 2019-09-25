@@ -2,6 +2,23 @@
 .footer-area {
     background-color: #F3F3F3;
     padding: 15px 0;
+    font-size: 14px;
+    @include all-below-sm{
+        text-align: center;
+        .text-right{
+            text-align: center !important;
+        }
+    }
+    .terms-condition-link {
+        a{
+            color: #000000;
+            transition: all .3s ease;
+            line-height: 26px;
+            &:hover{
+                color: #F6921E;
+            }
+        }
+    }
     .single-footer{
         &.footer-right{
             a:last-child{
@@ -9,7 +26,6 @@
             }
         }
         &.copyright-text {
-            font-size: 14px;
             margin-top: 5px;
         }
         

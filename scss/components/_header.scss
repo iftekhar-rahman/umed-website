@@ -34,7 +34,7 @@
             .menu-bars {
                 position: absolute;
                 top: 25px;
-                right: 0;
+                right:15px;
                 cursor: pointer;
                 @include all-below-sm{
                     right: 15px;
@@ -126,33 +126,33 @@
 }
 
 
-.sticky-wrapper.is-sticky .mainmenu ul li a {
-    @include large-desktops{
-        padding: 25px 15px 25px 15px;
-        transition: all .7s ease;
-    }
-    @include  mx-desktops{
-        padding: 25px 6px 25px 6px;
-    }
-}
-.sticky-wrapper.is-sticky .site-logo {
-    @include desktops{
-        height: 77px;
-        transition: all .7s ease;
-    }
-    @include  all-below-med{
-        height: 77px;
-    }
-}
-.sticky-wrapper.is-sticky .site-logo img {
-    @include desktops{
-        max-width: 180px;
-        transition: all .7s ease;
-    }
-    @include  all-below-med{
-        max-width: 150px;
-    } 
-}
+// .sticky-wrapper.is-sticky .mainmenu ul li a {
+//     @include large-desktops{
+//         padding: 25px 15px 25px 15px;
+//         transition: all .7s ease;
+//     }
+//     @include  mx-desktops{
+//         padding: 25px 6px 25px 6px;
+//     }
+// }
+// .sticky-wrapper.is-sticky .site-logo {
+//     @include desktops{
+//         height: 77px;
+//         transition: all .7s ease;
+//     }
+//     @include  all-below-med{
+//         height: 77px;
+//     }
+// }
+// .sticky-wrapper.is-sticky .site-logo img {
+//     @include desktops{
+//         max-width: 180px;
+//         transition: all .7s ease;
+//     }
+//     @include  all-below-med{
+//         max-width: 150px;
+//     } 
+// }
 
 .header-top-area {
     background-color: #1B75BB;
