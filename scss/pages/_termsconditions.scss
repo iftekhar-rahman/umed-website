@@ -1,0 +1,38 @@
+/*terms-conditions-area*/ 
+.terms-conditions-area{
+    padding: 70px 0 60px;
+    .dr-info{
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include all-below-med{
+            font-size: 28px;
+        }
+        @include all-below-mobile-lg{
+            font-size: 22px;
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        @include all-below-med{
+            font-size: 18px;
+        }
+    }
+    ul{
+        li{
+            margin-bottom: 7px;
+            padding-left: 30px;
+            position: relative;
+            .number{
+                position: absolute;
+                left: 0;
+                top: 0px;
+            }
+        }
+    }
+    .terms-condition{
+        margin-bottom: 40px;
+    }
+}

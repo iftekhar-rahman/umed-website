@@ -1,0 +1,36 @@
+/*========registration-form-area==========*/ 
+
+.registration-form-area{
+    padding: 60px 0 50px;
+    .regis-title{
+        margin-bottom: 50px;
+    }
+}
+
+.applicant-info {
+    margin-bottom: 25px;
+    h3{
+        font-size: 22px;
+        border-bottom: 2px solid #1B75BB;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    label{
+        display: block;
+        text-transform: uppercase;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #F6921E;
+        }
+        &:hover {
+            border: 1px solid #F6921E;
+        }
+    }
+    .submit-btn{
+        margin-top: 15px;
+    }
+}

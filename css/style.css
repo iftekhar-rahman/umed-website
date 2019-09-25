@@ -649,35 +649,61 @@ select {
   border-radius: 0; }
 
 /*terms-conditions-area*/
-.terms-conditions-area .dr-info {
-  margin-bottom: 20px; }
+.terms-conditions-area {
+  padding: 70px 0 60px; }
+  .terms-conditions-area .dr-info {
+    margin-bottom: 20px; }
+  .terms-conditions-area h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+    @media (max-width: 991px) {
+      .terms-conditions-area h2 {
+        font-size: 28px; } }
+    @media (max-width: 767px) {
+      .terms-conditions-area h2 {
+        font-size: 22px; } }
+  .terms-conditions-area h4 {
+    text-transform: uppercase; }
+    @media (max-width: 991px) {
+      .terms-conditions-area h4 {
+        font-size: 18px; } }
+  .terms-conditions-area ul li {
+    margin-bottom: 7px;
+    padding-left: 30px;
+    position: relative; }
+    .terms-conditions-area ul li .number {
+      position: absolute;
+      left: 0;
+      top: 0px; }
+  .terms-conditions-area .terms-condition {
+    margin-bottom: 40px; }
 
-.terms-conditions-area h2 {
-  margin-bottom: 20px;
-  text-transform: uppercase; }
-  @media (max-width: 991px) {
-    .terms-conditions-area h2 {
-      font-size: 28px; } }
-  @media (max-width: 767px) {
-    .terms-conditions-area h2 {
-      font-size: 22px; } }
+/*========registration-form-area==========*/
+.registration-form-area {
+  padding: 60px 0 50px; }
+  .registration-form-area .regis-title {
+    margin-bottom: 50px; }
 
-.terms-conditions-area h4 {
-  text-transform: uppercase; }
-  @media (max-width: 991px) {
-    .terms-conditions-area h4 {
-      font-size: 18px; } }
-
-.terms-conditions-area ul li {
-  margin-bottom: 7px;
-  padding-left: 30px;
-  position: relative; }
-  .terms-conditions-area ul li .number {
-    position: absolute;
-    left: 0;
-    top: 0px; }
-
-.terms-conditions-area .terms-condition {
-  margin-bottom: 40px; }
+.applicant-info {
+  margin-bottom: 25px; }
+  .applicant-info h3 {
+    font-size: 22px;
+    border-bottom: 2px solid #1B75BB;
+    display: inline-block;
+    margin-bottom: 30px; }
+  .applicant-info label {
+    display: block;
+    text-transform: uppercase; }
+  .applicant-info input {
+    width: 100%;
+    margin-bottom: 15px; }
+    .applicant-info input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid #F6921E; }
+    .applicant-info input:hover {
+      border: 1px solid #F6921E; }
+  .applicant-info .submit-btn {
+    margin-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */

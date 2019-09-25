@@ -1,0 +1,13 @@
+/*========registration-form-area==========*/
+.applicant-info {
+  margin-bottom: 25px; }
+  .applicant-info label {
+    display: block; }
+  .applicant-info input {
+    width: 100%; }
+    .applicant-info input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #F6921E; }
+    .applicant-info input:hover {
+      border-color: #F6921E; }
