@@ -7,7 +7,7 @@ $email = $_POST['inputEmail'];
 $position = $_POST['inputPositioned'];
 $other = $_POST['inputAnother'];
 
-$email_from = 'iftekharmail2@gmail.com';
+$email_from = 'iftekharmail2@yahoo.com';
 
 $email_subject = 'New Form Submission';
 
@@ -19,7 +19,7 @@ $email_body =   'User Name: $name.\n'.
                 'Other: $other.\n';
 
 
-$to = 'iftekharmail1@gmail.com';
+$to = 'iftekharmail1@yahoo.com';
 
 $headers = 'From: $email_from \r\n';
 
@@ -32,15 +32,4 @@ header('Location: contact-form.html');
 
 
 
-?>
-
-<?php
-$to      = 'nobody@example.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-mail($to, $subject, $message, $headers);
 ?>
