@@ -17,10 +17,15 @@ p {
     	margin-bottom: 0;
     }
 }
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+input[type=text], input[type=date], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 0;
     height: 40px;
     padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+input[type=date], input[type=datetime-local], input[type=month], input[type=time]{
+    -webkit-appearance: button;
+    border: 1px solid #ddd;
 }
 .form-group {
     margin-bottom: 25px;
