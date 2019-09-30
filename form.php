@@ -7,7 +7,7 @@ $email = $_POST['inputEmail'];
 $position = $_POST['inputPositioned'];
 $other = $_POST['inputAnother'];
 
-$email_from = 'iftekharmail2@yahoo.com';
+$email_from = 'iftekharmail2@example.com';
 
 $email_subject = 'New Form Submission';
 
@@ -19,7 +19,7 @@ $email_body =   'User Name: $name.\n'.
                 'Other: $other.\n';
 
 
-$to = 'iftekharmail1@yahoo.com';
+$to = 'iftekharmail1@example.com';
 
 $headers = 'From: $email_from \r\n';
 
